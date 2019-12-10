@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ExamenproModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Contacto">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Apellido" Type="String" MaxLength="100" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Documento_de_identidad_Ced_Pas_" Type="String" MaxLength="100" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Fecha_de_creacion" Type="DateTime" Nullable="false" Precision="0" />
+  </EntityType>
+  <EntityType Name="Visita">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Motivo_de_visita" Type="String" MaxLength="100" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Fecha_de_visita" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Hora_entrada" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="Hora_salidaa" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Contacto_que_lo_recibio" Type="String" MaxLength="100" FixedLength="true" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="ExamenproEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Contacto" EntityType="Self.Contacto" />
+    <EntitySet Name="Visita" EntityType="Self.Visita" />
+  </EntityContainer>
+</Schema>

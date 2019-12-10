@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ExamenproModelStoreContainer" CdmEntityContainer="ExamenproEntities">
+    <EntitySetMapping Name="Contacto">
+      <EntityTypeMapping TypeName="ExamenproModel.Contacto">
+        <MappingFragment StoreEntitySet="Contacto">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Apellido" ColumnName="Apellido" />
+          <ScalarProperty Name="Documento_de_identidad_Ced_Pas_" ColumnName="Documento de identidad(Ced/Pas)" />
+          <ScalarProperty Name="Fecha_de_creacion" ColumnName="Fecha de creacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Visita">
+      <EntityTypeMapping TypeName="ExamenproModel.Visita">
+        <MappingFragment StoreEntitySet="Visita">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Motivo_de_visita" ColumnName="Motivo de visita" />
+          <ScalarProperty Name="Fecha_de_visita" ColumnName="Fecha de visita" />
+          <ScalarProperty Name="Hora_entrada" ColumnName="Hora entrada" />
+          <ScalarProperty Name="Hora_salidaa" ColumnName="Hora salidaa" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Contacto_que_lo_recibio" ColumnName="Contacto que lo recibio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
